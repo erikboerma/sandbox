@@ -5,39 +5,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-
-<body>
-    <!-- Begin Mailchimp Signup Form -->
     <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <style type="text/css">
         #mc_embed_signup {
-            background: #fff;
-            clear: left;
+            background: #44a2a0;
+            /* clear: left; */
             font: 14px Helvetica, Arial, sans-serif;
             width: 100%;
+            color: white;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            display: inline-block;
         }
+        .backgroundBox {
+            height: 136px;
+            padding-top: 10px;
+        }
+        #fontAwesomeEnvelope {
+            color: #ffb140;
+            padding-right: 10px;
+        }
+        #signupHeader {
+            font-family: "Lato", sans-serif;
+            font-size: 24px;
+            font-weight: 400;
+            letter-spacing: 0px;
+            text-transform: none;
+            color: #ffffff;
+            padding-right: 10px;
+        }
+
+        input {
+
+            width: 26%;
+            border-radius: 25px;
+            text-align: left;
+            border: 2px solid transparent;
+        }
+
+        #emailBox {
+            background: #FFFFFF;
+            color: #8d8d8d;
+            height: 27px;
+            padding: 10px 47px 10px 22px;
+            margin-right: 10px;
+        }
+
+        #subscribeButton {
+            width: 143px;
+            height: 51px;
+            background: #da3f54;
+            color: white;
+            text-align: center;
+            padding: 15px 33px;
+        }
+
+
 
         /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
     </style>
+</head>
+
+<body>
+
+    <!-- Begin Mailchimp Signup Form -->
     <div id="mc_embed_signup">
-        <form
-            action="https://sweetbeantravels.us20.list-manage.com/subscribe/post?u=b7ebd886fcbedab29b025b33c&amp;id=28322b8526"
-            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-            target="_blank" novalidate>
-            <div id="mc_embed_signup_scroll">
-                <label for="mce-EMAIL">Sign up for our emails</label>
-                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address"
-                    required>
-                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
-                        name="b_b7ebd886fcbedab29b025b33c_28322b8526" tabindex="-1" value=""></div>
-                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
-                        class="button"></div>
-            </div>
-        </form>
-    </div>
+        <div class="form">
+            <form
+                action="https://sweetbeantravels.us20.list-manage.com/subscribe/post?u=b7ebd886fcbedab29b025b33c&amp;id=28322b8526"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                target="_blank" novalidate>
+                <div class="backgroundBox" id="mc_embed_signup_scroll">
+                    <label id="signupHeader" for="mce-EMAIL"><i class="far fa-envelope" id="fontAwesomeEnvelope"></i>Sign up for our emails</label>
+                    <input id="emailBox" type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
+                        placeholder="Your Email Address" required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                            name="b_b7ebd886fcbedab29b025b33c_28322b8526" tabindex="-1" value=""></div>
+                    <input id="subscribeButton" type="submit" value="SUBSCRIBE" name="subscribe"
+                        id="mc-embedded-subscribe" class="button">
+                </div>
+            </form>
+        </div>
 </body>
 
 </html>
